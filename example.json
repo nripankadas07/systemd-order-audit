@@ -1,0 +1,23 @@
+{
+  "roots": [
+    "app.service"
+  ],
+  "units": {
+    "app.service": {
+      "after": [
+        "db.service"
+      ],
+      "before": [],
+      "requires": [
+        "db.service"
+      ],
+      "wants": []
+    },
+    "db.service": {
+      "after": [],
+      "before": [],
+      "requires": [],
+      "wants": []
+    }
+  }
+}

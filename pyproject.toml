@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "systemd-order-audit"
+version = "0.1.0"
+description = "Expand explicit pull-ins from roots, separately construct ordering edges and return one concrete cycle or deterministic topological order."
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Dr. Nripanka Das", email = "nripankadas@gmail.com"}]
+dependencies = []
+[project.scripts]
+systemd-order-audit = "systemd_order_audit:main"
+[tool.setuptools]
+py-modules = ["systemd_order_audit"]

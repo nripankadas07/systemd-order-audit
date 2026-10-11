@@ -1,0 +1,22 @@
+[
+  {
+    "args": [
+      "example.json"
+    ],
+    "exit": 0,
+    "expect": {
+      "acyclic": true,
+      "order": [
+        "db.service",
+        "app.service"
+      ],
+      "complete": true
+    }
+  },
+  {
+    "args": [
+      "invalid.txt"
+    ],
+    "exit": 2
+  }
+]
